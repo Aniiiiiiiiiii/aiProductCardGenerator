@@ -1,0 +1,100 @@
+.app {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 4rem 2rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px 2px rgb(0 0 0 / 40%);
+    }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 32px;
+  }
+  
+  /* Form */
+  .product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .product-form input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .product-form input:focus {
+    outline: none;
+    border-color: #4f46e5;
+  }
+  
+  .product-form button {
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #0e8425;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: fit-content;
+    margin-top: 1rem;
+  }
+  
+  .product-form .button-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .product-form button:disabled {
+    background-color: #a5b4fc;
+    cursor: not-allowed;
+  }
+  
+  /* Product Card */
+  .product-card {
+    margin-top: 24px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    box-shadow: -1px 1px 9px 1px #12712469;
+  }
+  
+  .product-card h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .product-card p {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Tags */
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .tag {
+    padding: 6px 10px;
+    background-color: #c8fdd2;
+    color: #094f16;
+    border-radius: 20px;
+    font-size: 12px;
+  }
+  
+  /* Error */
+  .error {
+    margin-top: 16px;
+    color: #dc2626;
+    text-align: center;
+  }
+  
