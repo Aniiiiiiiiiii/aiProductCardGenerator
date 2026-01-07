@@ -1,27 +1,54 @@
 # AI Product Card Generator
 
-A simple React application that generates product card content (title, description, tags)
-using an AI model based on user input.
+This project is a simple React-based web application that generates product card content using AI.
+The user enters a product name and category, and the application generates a title, short description, and tags for that product.
+
+The main goal of this project is to demonstrate AI integration, clean React structure, and basic UI handling.
 
 ## Features
-- Enter product name and category
-- Generate AI-powered title, description, and tags
-- Clean card-based UI
-- Loading and error handling
+- Input field for product name
+- Input field for product category
+- Button to generate product details
+- AI-generated:
+  - Product title
+  - Short description
+  - Tags
+- Simple and clean product card UI
+- Loading indicator in the generate button and basic error handling
 
 ## Tech Stack
 - React (Vite)
 - JavaScript (ES6)
 - OpenAI Responses API
-- CSS
+- CSS for basic styling
 
 ## How AI Is Used
-The application sends the product name and category to an AI model via OpenAI's Responses API.
-The AI returns structured JSON containing a title, short description, and tags, which are then
-rendered as a product card.
+This application uses an AI model through OpenAI’s Responses API to generate product content.
+
+Workflow:
+- The user enters a product name and category.
+- This data is sent to the AI API as a prompt.
+- The AI generates structured content in JSON format, including:
+  - Title
+  - Short description
+  - Tags
+- The response is cleaned and parsed safely.
+- The generated content is displayed as a styled product card in the UI.
+
+This approach ensures reliable AI output and smooth rendering on the frontend.
 
 ## Setup Instructions
-1. Clone the repository
+To run the project locally, follow these steps:
+1. Clone the repository (https://github.com/Aniiiiiiiiiii/aiProductCardGenerator.git)
 2. Install dependencies:
-   ```bash
-   npm install
+  - npm install
+3. Create a .env file in the root directory and add your OpenAI API key:
+  - VITE_OPENAI_API_KEY=api_key_goes_here
+4. Start the development server:
+  - npm run dev
+5 Open the application in your browser (usually at http://localhost:5173)
+
+## Notes
+- API keys are stored securely using environment variables.
+- The UI is intentionally kept simple as per the assignment requirements.
+- The focus of this project is clean code, correct AI usage, and clarity rather than complex UI.
