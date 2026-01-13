@@ -1,4 +1,4 @@
-console.log("API KEY:", import.meta.env.VITE_OPENAI_API_KEY);
+// console.log("API KEY:", import.meta.env.VITE_OPENAI_API_KEY);
 
 const API_URL = "https://api.openai.com/v1/responses";
 
